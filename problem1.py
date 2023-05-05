@@ -29,7 +29,7 @@ def fixed_experiment(trainpercent,num):
         sample_train, target_train, sample_test, target_test = splitRatio(trainpercent, banknotedata)
         fixed = fixed.fit(sample_train, target_train)
         score = fixed.score(sample_test, target_test)
-        print('accuracy:' + str(score))
+        print('Accuracy:' + str(score))
         print('size:' + str(fixed.tree_.node_count))
         # tree.plot_tree(fixed, filled=True, feature_names=names)
         # plt.show()
